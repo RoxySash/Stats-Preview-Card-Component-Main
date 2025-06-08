@@ -8,16 +8,17 @@
     --color-violet: hsl(277, 64%, 61%);
 
 
-    --white-main-stats: hsl(0, 0%, 100%);
+    --white-main-heading-stats: hsl(0, 0%, 100%);
     --white-transparent-paragraph: hsla(0, 0%, 100%, 0.75);
-    --white-transparent-heading: hsla(0, 0%, 100%, 0.6);
+    --white-transparent-stats-heading: hsla(0, 0%, 100%, 0.6);
 
     --ff-main: "Inter", sans-serif;
     --ff: "Lexend Deca", sans-serif;
     
     --transparent-purple: hsla(279, 64%, 61%, 0.5);
 
-    --fs: 
+    --fs: clamp(1.6rem, 2.5vw, 2rem);
+    --fs-p: max(0.85rem, 1.2vw);
 
 
 
@@ -43,7 +44,8 @@ body {
   /* 4. Improve centering within parent */
   min-height: 100vh;
   background-color: var(--color-verdarkblue);
- 
+  margin: 0 auto;
+  padding: 2rem;
 
 	
 }
@@ -101,7 +103,9 @@ p, h1, h2, h3, h4, h5, h6 {
     color: var(--color-violet);
 }
 
-
+.uppercase {
+    text-transform: uppercase;
+}
 
 /* -------------------- */
 /* Regular CSS	*/
@@ -130,9 +134,15 @@ p, h1, h2, h3, h4, h5, h6 {
    }
 
    h1 {
-    color: var(--white-main-stats);
+    color: var(--white-main-heading-stats);
+    font-size: var(--fs);
    }
 
+   p {
+    color: var(--white-transparent-paragraph);
+    font-size: var(--fs-p);
+
+   }
 #image1 {display:block;}
 #image2 {display:none}
 
