@@ -1,0 +1,143 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    --color-verdarkblue: hsl(233, 47%, 7%);
+    --color-darkblue: hsl(244, 38%, 16%);
+    --color-violet: hsl(277, 64%, 61%);
+
+
+    --white-main-stats: hsl(0, 0%, 100%);
+    --white-transparent-paragraph: hsla(0, 0%, 100%, 0.75);
+    --white-transparent-heading: hsla(0, 0%, 100%, 0.6);
+
+    --ff-main: "Inter", sans-serif;
+    --ff: "Lexend Deca", sans-serif;
+    
+    --transparent-purple: hsla(279, 64%, 61%, 0.5);
+
+    --fs: 
+
+
+
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve centering within parent */
+  min-height: 100vh;
+  background-color: var(--color-verdarkblue);
+ 
+
+	
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* -------------------- */
+/* Utility Class	*/
+
+/* -------------------- */
+
+.flex {
+    display: flex;
+	gap: var(--gap, 1rem);
+    
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding-inline: 2em;
+	max-width: 80rem;
+	margin: 0 auto;
+    border: 2px solid white;
+    background-color: var(--color-darkblue);
+}
+
+.fw-large {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fw-small {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.purple-text {
+    color: var(--color-violet);
+}
+
+
+
+/* -------------------- */
+/* Regular CSS	*/
+
+/* -------------------- */
+
+ .wrapper {
+     position: relative;
+     display: inline-block; /* Or block, depending on your layout */
+   }
+
+   .wrapper::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: var(--transparent-purple); /* Example: semi-transparent black */
+   }
+
+   .wrapper img {
+     display: block; /* Remove default image spacing */
+     max-width: 100%;
+     height: auto;
+   }
+
+   h1 {
+    color: var(--white-main-stats);
+   }
+
+#image1 {display:block;}
+#image2 {display:none}
+
+@media all and (max-width: 499px) {
+    #image1 {display: none;}
+    #image2 {display: block;}
+}
+
