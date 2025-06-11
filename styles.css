@@ -20,6 +20,7 @@
     --fs: clamp(1.6rem, 2.5vw, 2rem);
     --fs-p: max(0.85rem, 1.2vw);
 
+    --gap: 5rem;
 
 
 }
@@ -82,9 +83,9 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	padding-inline: 2em;
-	max-width: 80rem;
-	margin: 0 auto;
+	
+	  width: 60rem;
+	
     border: 2px solid white;
     background-color: var(--color-darkblue);
 }
