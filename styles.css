@@ -19,7 +19,7 @@
 
     --fs: clamp(1.6rem, 2.5vw, 2rem);
     --fs-p: max(0.85rem, 1.2vw);
-
+    --fs-tp: max(0.625rem, 1.2vw);
     --gap: 5rem;
 
 
@@ -85,9 +85,8 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     width: 100%;
 	  max-width: 331px;
-	
-    border: 2px solid white;
     background-color: var(--color-darkblue);
+    font-family: var(--ff);
 }
 
 .fw-large {
@@ -98,6 +97,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .fw-small {
     font-weight: 400;
     font-style: normal;
+    
 }
 
 .purple-text {
@@ -106,6 +106,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.tinytext {
+  font-size: var(--fs-tp);
+  color: var(--white-transparent-paragraph)
 }
 
 /* -------------------- */
@@ -139,9 +144,15 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: var(--fs);
    }
 
+   h2 {
+    color: var(--white-main-heading-stats);
+   }
+
    p {
     color: var(--white-transparent-paragraph);
     font-size: var(--fs-p);
+    font-family: var(--ff);
+    font-weight: 200;
 
    }
 #image1 {display:block;}
