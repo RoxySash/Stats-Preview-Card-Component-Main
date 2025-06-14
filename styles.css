@@ -19,6 +19,7 @@
 
     --fs: clamp(1.6rem, 2.5vw, 2rem);
     --fs-p: max(0.85rem, 1.2vw);
+    --fs-stats: max(1.2rem, 1.2vw);
     --fs-tp: max(0.625rem, 1.2vw);
     --gap: 5rem;
 
@@ -87,6 +88,8 @@ p, h1, h2, h3, h4, h5, h6 {
 	  max-width: 331px;
     background-color: var(--color-darkblue);
     font-family: var(--ff);
+    border-radius: 10px;
+    text-align: center;
 }
 
 .fw-large {
@@ -120,7 +123,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
  .wrapper {
      position: relative;
-     display: inline-block; /* Or block, depending on your layout */
+     display: inline-block; /* Or block, depending layout */
    }
 
    .wrapper::before {
@@ -130,7 +133,7 @@ p, h1, h2, h3, h4, h5, h6 {
      left: 0;
      width: 100%;
      height: 100%;
-     background-color: var(--transparent-purple); /* Example: semi-transparent black */
+     background-color: var(--transparent-purple); /* semi-transparent black */
    }
 
    .wrapper img {
@@ -146,12 +149,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
    h2 {
     color: var(--white-main-heading-stats);
+    font-size: var(--fs-stats);
+    font-family: var(--ff-main);
+    font-weight: 700;
    }
 
    p {
     color: var(--white-transparent-paragraph);
     font-size: var(--fs-p);
-    font-family: var(--ff);
+    font-family: var(--ff-main);
     font-weight: 200;
 
    }
