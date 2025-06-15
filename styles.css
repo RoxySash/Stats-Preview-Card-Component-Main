@@ -3,27 +3,24 @@
 /* ------------------- */
 
 :root {
-    --color-verdarkblue: hsl(233, 47%, 7%);
-    --color-darkblue: hsl(244, 38%, 16%);
-    --color-violet: hsl(277, 64%, 61%);
+  --color-verdarkblue: hsl(233, 47%, 7%);
+  --color-darkblue: hsl(244, 38%, 16%);
+  --color-violet: hsl(277, 64%, 61%);
 
+  --white-main-heading-stats: hsl(0, 0%, 100%);
+  --white-transparent-paragraph: hsla(0, 0%, 100%, 0.75);
+  --white-transparent-stat-heading: hsla(0, 0%, 100%, 0.6);
 
-    --white-main-heading-stats: hsl(0, 0%, 100%);
-    --white-transparent-paragraph: hsla(0, 0%, 100%, 0.75);
-    --white-transparent-stats-heading: hsla(0, 0%, 100%, 0.6);
+  --ff-main: "Inter", sans-serif;
+  --ff: "Lexend Deca", sans-serif;
 
-    --ff-main: "Inter", sans-serif;
-    --ff: "Lexend Deca", sans-serif;
-    
-    --transparent-purple: hsla(279, 64%, 61%, 0.5);
+  --transparent-purple: hsla(279, 64%, 61%, 0.5);
 
-    --fs: clamp(1.6rem, 2.5vw, 2rem);
-    --fs-p: max(0.85rem, 1.2vw);
-    --fs-stats: max(1.2rem, 1.2vw);
-    --fs-tp: max(0.625rem, 1.2vw);
-    --gap: 5rem;
-
-
+  --fs: clamp(1.5rem, 2.3vw, 1.5rem);
+  --fs-p: max(0.86rem, 1.2vw);
+  --fs-stats: max(1.5rem, 1.2vw);
+  --fs-tp: max(0.425rem, 1.2vw);
+  --gap: 2.5rem;
 }
 
 /* ------------------- */
@@ -31,7 +28,9 @@
 /* ------------------- */
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -47,24 +46,39 @@ body {
   min-height: 100vh;
   background-color: var(--color-verdarkblue);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
-
-	
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -74,46 +88,51 @@ p, h1, h2, h3, h4, h5, h6 {
 /* -------------------- */
 
 .flex {
-    display: flex;
-	gap: var(--gap, 1rem);
-    
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
 .container {
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-	  max-width: 331px;
-    background-color: var(--color-darkblue);
-    font-family: var(--ff);
-    border-radius: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 331px;
+  background-color: var(--color-darkblue);
+  font-family: var(--ff);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .fw-large {
-    font-weight: 700;
-    font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .fw-small {
-    font-weight: 400;
-    font-style: normal;
-    
+  font-weight: 400;
+  font-style: normal;
 }
 
 .purple-text {
-    color: var(--color-violet);
+  color: var(--color-violet);
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  /* how do add the space between letters ah letter spacing of course*/
+  letter-spacing: 1.2px;
 }
 
 .tinytext {
   font-size: var(--fs-tp);
-  color: var(--white-transparent-paragraph)
+  color: var(--white-transparent-stat-heading);
+  padding-top: 0;
+}
+
+.spacing {
+  padding-bottom: 1.1rem;
 }
 
 /* -------------------- */
@@ -121,51 +140,171 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- */
 
- .wrapper {
-     position: relative;
-     display: inline-block; /* Or block, depending layout */
-   }
-
-   .wrapper::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: var(--transparent-purple); /* semi-transparent black */
-   }
-
-   .wrapper img {
-     display: block; /* Remove default image spacing */
-     max-width: 100%;
-     height: auto;
-   }
-
-   h1 {
-    color: var(--white-main-heading-stats);
-    font-size: var(--fs);
-   }
-
-   h2 {
-    color: var(--white-main-heading-stats);
-    font-size: var(--fs-stats);
-    font-family: var(--ff-main);
-    font-weight: 700;
-   }
-
-   p {
-    color: var(--white-transparent-paragraph);
-    font-size: var(--fs-p);
-    font-family: var(--ff-main);
-    font-weight: 200;
-
-   }
-#image1 {display:block;}
-#image2 {display:none}
-
-@media all and (max-width: 499px) {
-    #image1 {display: none;}
-    #image2 {display: block;}
+.wrapper {
+  position: relative;
+  display: inline-block; /* Or block, depending layout */
 }
 
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--transparent-purple); /* semi-transparent black */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wrapper img {
+  display: block; /* Remove default image spacing */
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  color: var(--white-main-heading-stats);
+  font-size: var(--fs);
+  line-height: 1.1;
+  
+}
+
+h2 {
+  color: var(--white-main-heading-stats);
+  font-size: var(--fs-stats);
+  font-family: var(--ff-main);
+  font-weight: 700;
+}
+
+p {
+  color: var(--white-transparent-paragraph);
+  font-size: var(--fs-p);
+  font-family: var(--ff);
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 1.2px;
+  padding-top: 10px;
+}
+
+#image1 {
+  display: block;
+}
+
+#image2 {
+  display: none;
+}
+
+.card-stats {
+  padding-top: 0;
+  padding-bottom: 34px; /* change all padding to rem */
+}
+
+.card-text {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+@media all and (max-width: 499px) {
+  #image1 {
+    display: none;
+  }
+  #image2 {
+    display: block;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 750px) {
+  #image1 {
+    display: none;
+  }
+  #image2 {
+    display: block;
+    max-width: 100%;
+    /* how to fit the image to the conatiner always*/
+    object-fit: contain;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1080px;
+    flex: row;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .card-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    padding-left: 5rem;
+    padding-right: 5.5rem;
+     
+    
+  }
+
+  .card-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-self: flex-start;
+   
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .card-text {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 3.2rem;
+  }
+
+  .wrapper {
+    width: 50%;
+    
+  }
+
+  .spacing {
+    padding-right: 2.5rem;
+  }
+
+  .wrapper::before {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+
+  .wrapper img {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    object-fit: contain;
+   
+  }
+
+  h1 {
+    
+    
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  p {
+    padding-top: 2rem;
+  }
+
+  .stats {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
