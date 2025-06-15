@@ -12,9 +12,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -28,9 +27,11 @@ Users should be able to:
 ### Screenshot
 
 Screenshot below previews the mobile version
+
 ![Mobile View](./images/Mobile%20Screenshot.png)
 
 Screenshot below shows the desktop version
+
 ![Desktop View](./images/Desktop%20Screenshot.png)
 
 
@@ -39,10 +40,19 @@ Screenshot below shows the desktop version
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/RoxySash/Stats-Preview-Card-Component-Main.git)
+- Live Site URL: [Add live site URL here](https://roxysash.github.io/Stats-Preview-Card-Component-Main/)
 
 ## My process
+
+1. Initialized project as a public repository 
+2. Configured repository to publish your code to a web address. 
+3. Looked through the designs to started planning. 
+4. Wrote HTML classes and added divs or sections.
+5. Wrote out the base styles for my project, including general content styles, such as `font-family` and `font-size`.
+6. Started adding styles to the top of the page and work down. Jumped back and forth for a while. 
+7. After using dev tools to check responsiveness on various screen sizes I concluded that the project was complete. 
+8. Final Push 
 
 ### Built with
 
@@ -75,27 +85,13 @@ I eventually got to my answer after tinkering with the width and sizes of the co
   }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+Centering the div of course and attaching images to be responsive in relation to the contianers.
 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@RoxySash](https://www.frontendmentor.io/profile/RoxySash)
 
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
