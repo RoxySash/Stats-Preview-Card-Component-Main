@@ -16,7 +16,7 @@
 
   --transparent-purple: hsla(279, 89%, 22%, 0.488);
 
-  --fs: clamp(2.5rem, 2.3vw, 1.5rem);
+  --fs: clamp(2.3rem, 2.3vw, 1.5rem);
   --fs-p: max(0.86rem, 1.2vw);
   --fs-stats: max(1.3rem, 1.2vw);
   --fs-tp: max(0.225rem, 1.2vw);
