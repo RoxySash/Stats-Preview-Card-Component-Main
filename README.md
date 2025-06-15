@@ -54,22 +54,25 @@ Screenshot below shows the desktop version
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I eventually got to my answer after tinkering with the width and sizes of the container and image and I got to this. 
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+.wrapper::before {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+
+  .wrapper img {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    max-width: 100%;
+    height: 456px;
+    object-fit: cover;
+    
+  }
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
